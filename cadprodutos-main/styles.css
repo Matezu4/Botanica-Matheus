@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonbon&family=Delius&family=Geo:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Schoolbell&family=Supermercado+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #afcce9e8;
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 9%;
+}
+
+.container {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Delius", cursive;
+}
+
+input[type="submit"] {
+    background-color: #b886f1;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-family: "Delius", cursive;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #8444ce;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#buscarProduto {
+    background-color: #0598dc;
+}
+
+#buscarProduto:hover {
+    background-color: #0478b0;
+}
+
+#atualizarProduto {
+    background-color: #dcb105;
+}
+
+#atualizarProduto:hover {
+    background-color: #b89304;
+}
+
+#deletarProduto {
+    background-color: #dc0905;
+}
+
+#deletarProduto:hover {
+    background-color: #b00704;
+}

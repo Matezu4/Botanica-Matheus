@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonbon&family=Delius&family=Geo:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Schoolbell&family=Supermercado+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #afcce9e8;
+
+}
+
+.cabecalho {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    z-index: 1000;
+    padding: 15px 0;
+    margin: 3% 20% 0px 20%;
+    border-radius: 20px;
+    box-shadow: #333333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container1 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.menu-lista {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    position: relative;
+}
+
+.menu-lista li {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menu-lista a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+}
+
+.menu-lista a:hover {
+    color: #9a5fd1;
+}
+
+.menu-lista img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    z-index: 1000;
+    min-width: 150px;
+}
+
+.dropdown-menu li {
+    width: 100%;
+    padding: 8px 20px;
+}
+
+.drop a {
+    width: 100%;
+    display: block;
+    color: #333;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    color: #9a5fd1;
+}
+
+.botao {
+    background-color: #b886f1;
+    border: #8626f3;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #8444ce;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.principal{
+    background-color: #ffffff;
+    margin: 5%;
+}
+
+.menu-ativo {
+    font-weight: bold !important;
+    color: #9a5fd1 !important;
+    border-bottom: 2px solid #9a5fd1;
+}
+
+.menu-lista a {
+    /* Mantenha seus estilos atuais */
+    transition: all 0.3s ease;
+}
+
+.menu-lista a:hover {
+    color: #9a5fd1;
+    font-weight: bold;
+}
+
+/* Adicione estas regras ao final do arquivo */
+.principal {
+    padding: 20px 0;
+}
+
+.sem-resultados {
+    text-align: center;
+    color: #666;
+    padding: 40px;
+    font-size: 1.2rem;
+}
+
+/* Estilos para o sistema de login */
+.login-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-greeting {
+    color: #333;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: -30%;
+}
+
+#loginPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 320px; /* Define uma largura fixa */
+    max-width: 90%;
+}
+
+.login-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#closePopup {
+    top: -1%;
+    left: 45%;
+    position: fixed;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+#closePopup:hover {
+    color: red;
+}
+
+.flexp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexp button{
+    padding: 0px;
+}
+
+
+.login-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-content input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.login-content button {
+    width: 100%;
+    margin: 5px 0;
+}
+
+/* Estilos para os botões dentro do popup */
+.login-content .botao {
+    margin-top: 10px;
+}
+
+.user-avatar {
+    
+    width: 40px;
+    height: 40px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: default;
+    user-select: none;
+}

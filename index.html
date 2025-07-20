@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Botânica</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="styleM.css">
+    <link rel="stylesheet" href="produtos_style.css">
+</head>
+<body>
+    <div class="cabecalho">
+        <div class="container">
+            <nav class="menu">
+                <ul class="menu-lista">
+                    <li><img src="img/favicon.ico" alt="Ícone" onclick="filtrarProdutos('todos')"></li>
+
+                    <li class="dropdown">
+                        <span class="drop">Categorias ▾</span>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" onclick="filtrarProdutos('todos')">Todos</a></li>
+                            <li><a href="#" onclick="filtrarProdutos('plantas')">Plantas</a></li>
+                            <li><a href="#" onclick="filtrarProdutos('ferramentas')">Ferramentas</a></li>
+                            <li><a href="#" onclick="filtrarProdutos('sementes')">Sementes</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <span class="drop">Cadastrar ▾</span>
+                        <ul class="dropdown-menu">
+                            <li><a href="cadprodutos-main/cadprod.html" onclick="filtrarProdutos('todos')">Produtos</a></li>
+                            <li><a href="cadclientes-main/cadcli.html" onclick="filtrarProdutos('todos')">Clientes</a></li>
+                        </ul>
+                    </li>
+                    <li>Contato</li>
+                    <li>Sobre nós</li>
+
+                </ul>
+            </nav>
+            <div class="user-avatar" id="userAvatar">A</div>
+            <div class="login-container">
+                <div class="user-greeting" id="userGreeting" style="display: none;"></div>
+                <button id="loginButton" class="botao">Login</button>
+                <button id="logoutButton" class="botao" style="display: none;">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- POPUP DE LOGIN -->
+    <div id="loginPopup" style="display: none;">
+        <div class="login-content">
+            <div class="flexp">
+                <button id="closePopup">&times;</button>
+                <h2>Login</h2>
+            </div>
+            <form id="loginForm">
+                <input type="email" id="email" placeholder="E-mail" required>
+                <input type="password" id="password" placeholder="Senha" required>
+                <button type="submit" class="botao solid">Entrar</button>
+                <button type="button" id="recover-password-button" class="botao clear">Recuperar Senha</button>
+                <button type="button" id="register-button" class="botao">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="principal">
+        <div class="pesquisa-container">
+            <input id="campo-pesquisa" type="text" placeholder="Pesquisar plantas...">
+            <button class="botao" onclick="pesquisar()">Buscar</button>
+        </div>
+
+        <div id="resultados-pesquisa">
+            <!-- Produtos serão inseridos aqui pelo JavaScript -->
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/11.10.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.10.0/firebase-auth-compat.js"></script>
+    
+    <script src="dados.js"></script>
+    <script src="produtos_script.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>

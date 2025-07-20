@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CADASTRO DE PRODUTOS</h1>
+            <input type="text" id="codigo" placeholder="Código" required>
+            <input type="text" id="produto" placeholder="Nome do Produto" required>
+            <input type="text" id="categoria" placeholder="Categoria" required>
+            <input type="text" id="quantidade" placeholder="Quantidade" required>
+            <input type="text" id="valor" placeholder="Valor do Produto" required>
+            <input id="cadastrarProduto" type="submit" value="Cadastrar Produto" >
+    </div>
+    <div class="container">
+        <h1>BUSCA E ATUALIZAÇÃO NOS PRODUTOS</h1>
+            <input type="text" id="idProduto" placeholder="Enter ID" required>
+            <input id="buscarProduto" type="submit" value="Buscar Produto" style="background-color: #0598dc;">
+
+            <input type="text" id="dadoProduto" placeholder="Produto">
+            <input type="text" id="dadoCategoria" placeholder="Categoria">
+            <input type="text" id="dadoQuantidade" placeholder="Quantidade">
+            <input type="text" id="dadoValor" placeholder="Valor do Produto">
+            <input id="atualizarProduto" type="submit" value="Atualizar Produto" style="background-color: #dcb105;">
+            
+            <input id="deletarProduto" type="submit" value="Deletar Produto" style="background-color: #dc0905;">
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

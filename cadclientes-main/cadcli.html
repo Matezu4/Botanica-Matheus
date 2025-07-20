@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Clientes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CADASTRO DE CLIENTES</h1>
+        <input type="text" id="cpfCliente" placeholder="CPF (somente números)" required>
+        <input type="text" id="nomeCliente" placeholder="Nome Completo" required>
+        <input type="email" id="emailCliente" placeholder="E-mail">
+        <input type="tel" id="telefoneCliente" placeholder="Telefone">
+        <input type="text" id="enderecoCliente" placeholder="Endereço">
+        <input type="text" id="cidadeCliente" placeholder="Cidade">
+        <input type="text" id="estadoCliente" placeholder="Estado" maxlength="2">
+        <input id="cadastrarCliente" type="submit" value="Cadastrar Cliente">
+    </div>
+
+    <div class="container">
+        <h1>GERENCIAR CLIENTES</h1>
+        <input type="text" id="buscaCpfCliente" placeholder="Digite o CPF para buscar" required>
+        <input id="buscarCliente" type="submit" value="Buscar Cliente" style="background-color: #0598dc;">
+
+        <input type="text" id="editarNomeCliente" placeholder="Nome Completo">
+        <input type="email" id="editarEmailCliente" placeholder="E-mail">
+        <input type="tel" id="editarTelefoneCliente" placeholder="Telefone">
+        <input type="text" id="editarEnderecoCliente" placeholder="Endereço">
+        <input type="text" id="editarCidadeCliente" placeholder="Cidade">
+        <input type="text" id="editarEstadoCliente" placeholder="Estado" maxlength="2">
+        
+        <input id="atualizarCliente" type="submit" value="Atualizar Cliente" style="background-color: #dcb105;">
+        <input id="excluirCliente" type="submit" value="Excluir Cliente" style="background-color: #dc0905;">
+    </div>
+
+    <script type="module" src="scriptcli.js"></script>
+</body>
+</html>

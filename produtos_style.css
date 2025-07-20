@@ -1,0 +1,108 @@
+/* Estilos para a pesquisa */
+.pesquisa-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.pesquisa-container input {
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 2px solid #b886f1;
+    width: 100%;
+    max-width: 500px;
+    font-family: "Delius", cursive;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Estilos para o grid de produtos */
+.produtos-colunas {
+    display: flex;
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.produtos-coluna {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.item-resultado {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.item-resultado:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.item-resultado img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.item-resultado h2 {
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.descricao-meta {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.preco {
+    display: block;
+    font-weight: bold;
+    color: #b886f1;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.botao-comprar {
+    background-color: #b886f1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao-comprar:hover {
+    background-color: #9a5fd1;
+}
+
+/* Menu ativo */
+.menu-ativo {
+    font-weight: bold;
+    color: #9a5fd1 !important;
+}
+
+.menu-ativo::after {
+    background-color: #9a5fd1 !important;
+    width: 100% !important;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .produtos-colunas {
+        flex-direction: column;
+    }
+}
